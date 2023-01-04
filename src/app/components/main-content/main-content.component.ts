@@ -18,7 +18,7 @@ export class MainContentComponent implements OnInit {
 
   showCurrent() {
     this.capApi.getCurrentLimit(this.currentNumber).subscribe((data) => {
-      this.arrayOfCats = data;
+      this.arrayOfCats = data;      
     });
   }
 

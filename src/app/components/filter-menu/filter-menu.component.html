@@ -1,5 +1,5 @@
 <div class="filter__menu">
-  <div class="filter__menu-limits">
+  <form [formGroup]="limitForm" class="filter__menu-limits">
     <p>Choose limit of pictures to show</p>
     <mat-form-field appearance="fill">
       <mat-label>Select a limit</mat-label>
@@ -15,9 +15,9 @@
       Apply limit
     </button>
     <p>Your limit of pictures: {{ selectedLimit }}</p>
-  </div>
+  </form>
 
-  <div class="filter__menu-breeds">
+  <form [formGroup]="breedForm" class="filter__menu-breeds">
     <p>Choose breed to show</p>
     <mat-form-field appearance="fill">
       <mat-label>Select a breed</mat-label>
@@ -34,11 +34,12 @@
         <mat-option value="sfol">Scottish Fold</mat-option>
         <mat-option value="siam">Siamese</mat-option>
         <mat-option value="tonk">Tonkinese</mat-option>
+        <mat-option value="all">All</mat-option>
       </mat-select>
     </mat-form-field>
     <button mat-raised-button color="primary" (click)="applyBreed()">
       Apply breed
     </button>
     <p>Your breed is: {{ selectedBreed }}</p>
-  </div>
+  </form>
 </div>
