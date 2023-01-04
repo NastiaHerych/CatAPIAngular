@@ -1,0 +1,44 @@
+<div class="filter__menu">
+  <div class="filter__menu-limits">
+    <p>Choose limit of pictures to show</p>
+    <mat-form-field appearance="fill">
+      <mat-label>Select a limit</mat-label>
+      <mat-select [(value)]="selectedLimit">
+        <mat-option value="5">5</mat-option>
+        <mat-option value="10">10</mat-option>
+        <mat-option value="20">20</mat-option>
+        <mat-option value="50">50</mat-option>
+        <mat-option value="100">100</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <button mat-raised-button color="primary" (click)="applyLimit()">
+      Apply limit
+    </button>
+    <p>Your limit of pictures: {{ selectedLimit }}</p>
+  </div>
+
+  <div class="filter__menu-breeds">
+    <p>Choose breed to show</p>
+    <mat-form-field appearance="fill">
+      <mat-label>Select a breed</mat-label>
+      <mat-select [(value)]="selectedBreed">
+        <mat-option value="bamb">Bambino</mat-option>
+        <mat-option value="amis">Australian Mist</mat-option>
+        <mat-option value="bslo">British Longhair</mat-option>
+        <mat-option value="crex">Cornish Rex</mat-option>
+        <mat-option value="cymr">Cymric</mat-option>
+        <mat-option value="drex">Devon Rex</mat-option>
+        <mat-option value="lihu">Dragon Li</mat-option>
+        <mat-option value="hbro">Havana Brown</mat-option>
+        <mat-option value="khao">Khao Manee</mat-option>
+        <mat-option value="sfol">Scottish Fold</mat-option>
+        <mat-option value="siam">Siamese</mat-option>
+        <mat-option value="tonk">Tonkinese</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <button mat-raised-button color="primary" (click)="applyBreed()">
+      Apply breed
+    </button>
+    <p>Your breed is: {{ selectedBreed }}</p>
+  </div>
+</div>

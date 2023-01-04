@@ -1,0 +1,10 @@
+<app-filter-menu
+  (limit)="getLimitFromParent($event)"
+  (breed)="getBreedFromParent($event)"
+></app-filter-menu>
+
+<div class="content">
+  <div *ngFor="let cat of arrayOfCats">
+    <img [src]="cat.url" class="content__item" />
+  </div>
+</div>

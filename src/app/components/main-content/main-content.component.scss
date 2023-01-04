@@ -1,0 +1,14 @@
+.content {
+  margin: 0 auto;
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+
+  &__item {
+    width: 200px;
+  }
+}
