@@ -1,3 +1,12 @@
+The project was made using the open CatAPI.
+
+Deployed app you can see, by visited this link: https://nastiaherych.github.io/CatAPIAngular/home.
+
+App can show you differnet types of cat breeds. The number of images to show has a problem, because api request is broken (it always returns 10 images).
+You can see it at official github: https://github.com/AdenForshaw/theCatAPI-website/issues. 
+So the code to see different limits of images was created, and a result of generated url is shown in console.log.
+
+
 # CatApiApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.9.
